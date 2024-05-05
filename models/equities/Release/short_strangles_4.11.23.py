@@ -60,7 +60,7 @@ class ShortStrangles:
         delaySecs = 60
         while not self.ib.isConnected():
             try:
-                self.ib.connect("127.0.0.1", port=7497, clientId=101, timeout=5)
+                self.ib.connect("172.29.112.1", port=7878, clientId=101, timeout=5)
                 if self.ib.isConnected():
                     print(f'{self.get_timestamp()} Connected to IBKR')
                     current_reconnect = 0
